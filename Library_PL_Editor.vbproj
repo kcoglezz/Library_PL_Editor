@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD815D6C-D5D6-4A34-9CB0-9B138CC029C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Library_PL_Editor</RootNamespace>
+    <AssemblyName>Library_PL_Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Library_PL_Editor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Library_PL_Editor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.GData.Client, Version=1.4.0.2, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\PLEditor\PLEditor\EditorClass\bin\Release\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="calendar.vb" />
+    <Compile Include="CountryLookup.vb" />
+    <Compile Include="DataLayer\answers.vb" />
+    <Compile Include="DataLayer\bloqued.vb" />
+    <Compile Include="DataLayer\book.vb" />
+    <Compile Include="DataLayer\boolean_response.vb" />
+    <Compile Include="DataLayer\categories.vb" />
+    <Compile Include="DataLayer\categories_section.vb" />
+    <Compile Include="DataLayer\category_page.vb" />
+    <Compile Include="DataLayer\countries.vb" />
+    <Compile Include="DataLayer\cursos.vb" />
+    <Compile Include="DataLayer\estado_civil.vb" />
+    <Compile Include="DataLayer\forums.vb" />
+    <Compile Include="DataLayer\messages.vb" />
+    <Compile Include="DataLayer\my_favorites.vb" />
+    <Compile Include="DataLayer\my_tasks.vb" />
+    <Compile Include="DataLayer\newsletter.vb" />
+    <Compile Include="DataLayer\pages.vb" />
+    <Compile Include="DataLayer\page_type.vb" />
+    <Compile Include="DataLayer\page_visit.vb" />
+    <Compile Include="DataLayer\priority.vb" />
+    <Compile Include="DataLayer\questions.vb" />
+    <Compile Include="DataLayer\rating.vb" />
+    <Compile Include="DataLayer\reg_users.vb" />
+    <Compile Include="DataLayer\sections.vb" />
+    <Compile Include="DataLayer\section_articles.vb" />
+    <Compile Include="DataLayer\sexo.vb" />
+    <Compile Include="DataLayer\temp_users.vb" />
+    <Compile Include="DataLayer\user_security_level.vb" />
+    <Compile Include="DataLayer\user_type.vb" />
+    <Compile Include="DataLayer\work_type.vb" />
+    <Compile Include="Design2010.vb" />
+    <Compile Include="Editor.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditorPageGrid.vb" />
+    <Compile Include="ErrorHandler.vb" />
+    <Compile Include="ErrorPageTemplate.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Forum.vb" />
+    <Compile Include="Funcion.vb" />
+    <Compile Include="Functions.vb" />
+    <Compile Include="GenericDataGrid.vb" />
+    <Compile Include="GenericDataHandler.vb" />
+    <Compile Include="GenericForm.vb" />
+    <Compile Include="ImageResize.vb" />
+    <Compile Include="MenuGenerator.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PageTemplate.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PT3.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.vb" />
+    <Compile Include="Section.vb" />
+    <Compile Include="SecureQueryString.vb" />
+    <Compile Include="Survey.vb" />
+    <Compile Include="User.vb" />
+    <Compile Include="XmlParser.vb" />
+    <Compile Include="XmlWriter.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataLayer\oldreg_users.vb.exclude" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library_PL\Library_PL\Library_PL.csproj">
+      <Project>{A67271D9-8604-4639-81F9-B71C487CAC50}</Project>
+      <Name>Library_PL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
